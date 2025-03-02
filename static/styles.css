@@ -1,0 +1,97 @@
+/* static/styles.css */
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  font-size: 16px;
+}
+.bg-gradient {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main-container {
+  padding: 5% 0;
+}
+.form-container, .result-box {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  padding: 35px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.25);
+  margin-bottom: 25px;
+}
+.form-title {
+  text-align: center;
+  margin-bottom: 35px;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+.form-group {
+  position: relative;
+  margin-bottom: 30px;
+}
+.form-input {
+  width: 100%;
+  padding: 18px 22px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: box-shadow 0.3s ease;
+}
+.form-input:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+.form-label {
+  position: absolute;
+  top: 18px;
+  left: 22px;
+  font-size: 1rem;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
+  top: -10px;
+  font-size: 0.9rem;
+  background-color: rgb(20, 13, 104);
+  padding: 0px 8px;
+  left: 15px;
+  font-weight: 500;
+}
+.check-button {
+  width: 100%;
+  padding: 18px 22px;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(to bottom, #fff, #f0f0f0);
+  color: #333;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+.check-button:hover {
+  background: linear-gradient(to bottom, #f0f0f0, #fff);
+  transform: translateY(-2px);
+}
+.result-container {
+  display: none;
+}
+.url-display {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1.1rem;
+}
+.url-display a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.
